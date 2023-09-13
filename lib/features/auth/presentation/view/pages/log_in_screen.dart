@@ -16,8 +16,20 @@ class LoginScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
-          // title: const Text('Log In'),
+        leading: const SizedBox(),
+        actions: [
+          IconButton(
+            onPressed: () {
+              context.pop();
+            },
+            icon: const Icon(
+              Icons.arrow_back_ios_new_rounded,
+              color: LightColors.primary,
+              size: 30,
+            ),
           ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(

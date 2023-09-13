@@ -10,8 +10,21 @@ class FindTranslatorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Padding(
+      appBar: AppBar(
+        leading: const SizedBox(),
+        actions: [
+          IconButton(
+            onPressed: () {
+              context.pop();
+            },
+            icon: const Icon(
+              Icons.arrow_back_ios_new_rounded,
+              color: LightColors.primary,
+              size: 30,
+            ),
+          ),
+        ],
+      ),      body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: SingleChildScrollView(
           child: Column(
@@ -46,6 +59,7 @@ class FindTranslatorScreen extends StatelessWidget {
                       style: getTitleMediumTheme(context)
                           .copyWith(color: LightColors.primary),
                     ),
+                    //onboarding
                     CheckboxListTile(
                       value: true,
                       title: const Text("الإنجليزية"),
@@ -63,7 +77,6 @@ class FindTranslatorScreen extends StatelessWidget {
                       onChanged: (onChanged) {},
                     ),
                     CheckboxListTile(
-                      
                       value: false,
                       title: const Text("الايطاليه"),
                       onChanged: (onChanged) {},
