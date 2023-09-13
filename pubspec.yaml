@@ -1,0 +1,80 @@
+name: store_app
+description: A new Flutter project.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.0.1
+  flutter_svg: ^1.1.6
+  shared_preferences: ^2.0.15
+  lottie: ^2.3.2
+  flutter_animate:
+  shimmer: ^2.0.0
+  dartz:
+  animated_text_kit: ^4.2.2
+  dio:
+  get_it: ^7.3.0
+  image_picker: ^0.8.8
+  smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+  dotted_border: ^2.0.0+3
+  flutter_staggered_grid_view: ^0.6.2
+  flutter_rating_bar: ^4.0.1
+  flutter_spinkit: ^5.2.0
+  connectivity_plus: ^4.0.2
+  flutter_localizations:
+    sdk: flutter
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  assets:
+    - assets/
+    - assets/svg/
+    - assets/lottie/
+    - assets/lang/
+
+
+  fonts:
+    - family: TajawalBlack
+      fonts:
+        - asset: assets/fonts/ar/Tajawal-Black.ttf
+
+    - family: TajawalExtraBold
+      fonts:
+        - asset: assets/fonts/ar/Tajawal-ExtraBold.ttf
+
+    - family: TajawalExtraLight
+      fonts:
+        - asset: assets/fonts/ar/Tajawal-ExtraLight.ttf
+
+    - family: TajawalLight
+      fonts:
+        - asset: assets/fonts/ar/Tajawal-light.ttf
+
+    - family: TajawalMedium
+      fonts:
+        - asset: assets/fonts/ar/Tajawal-Medium.ttf
+
+    - family: TajawalRegular
+      fonts:
+        - asset: assets/fonts/ar/Tajawal-Regular.ttf
+
+
+
+  uses-material-design: true
