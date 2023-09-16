@@ -14,7 +14,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_bloc: ^8.0.1
   flutter_svg: ^1.1.6
-  shared_preferences: ^2.0.15
   lottie: ^2.3.2
   flutter_animate:
   shimmer: ^2.0.0
@@ -48,6 +47,7 @@ flutter:
     - assets/svg/
     - assets/lottie/
     - assets/lang/
+    - assets/images/
 
 
   fonts:

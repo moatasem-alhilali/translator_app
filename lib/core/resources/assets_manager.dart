@@ -1,4 +1,3 @@
-
 class FxLottie {
   static const favorite = "assets/lottie/favorite.json";
   static const robotError = "assets/lottie/erro_robot.json";
@@ -17,4 +16,12 @@ class FxLottie {
 
 class FxSvg {
   static const translator = "assets/svg/translator_icon.svg";
+}
+
+class FxImage {
+  static const girl1 = "assets/images/gir-1.jpg";
+  static const girl2 = "assets/images/gir-2.jpg";
+  static const man1 = "assets/images/man-2.jpg";
+  static const man2 = "assets/images/man-2.jpg";
+  static const man3 = "assets/images/man-2.jpg";
 }

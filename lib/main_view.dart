@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/app_localizations/AppLocalizations.dart';
 import 'core/themes/light_theme.dart';
 import 'features/auth/presentation/view/pages/log_in_screen.dart';
+import 'features/home/presentation/view/pages/home_page_screen.dart';
 import 'features/onboarding/pages/on_boarding_screen.dart';
 
 class MainView extends StatelessWidget {
@@ -33,7 +34,7 @@ class MainView extends StatelessWidget {
       },
       supportedLocales: const [Locale('ar'), Locale('en')],
       debugShowCheckedModeBanner: false,
-      home: const OnBoardingScreen(),
+      home:  HomePageScreen(),
     );
   }
 }

@@ -55,6 +55,7 @@ class OnBoardingScreen extends StatelessWidget {
                     const SizedBox(width: 10),
                     Expanded(
                       child: MyProgressButton(
+                        width: 50,
                         text: "تسجيل الدخول",
                         height: context.getHight(7),
                         onPressed: () {

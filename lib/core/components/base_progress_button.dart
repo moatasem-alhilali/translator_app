@@ -31,7 +31,7 @@ class MyProgressButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      width: getWidth(state, width),
+      width: getWidth(state, width ?? SizeConfig.horizontal! * 60),
       margin: EdgeInsets.symmetric(vertical: marginVertical ?? 5),
       curve: Curves.easeInOutBack,
       height: height ?? SizeConfig.vertical! * 6.5,
