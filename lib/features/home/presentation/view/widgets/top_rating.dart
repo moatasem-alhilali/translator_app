@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/core/themes/light_theme.dart';
 import 'package:store_app/core/utils/constant.dart';
+import 'package:store_app/core/utils/my_extensions.dart';
+import 'package:store_app/features/detail/presentation/view/pages/detail_screen.dart';
 
 class TopRating extends StatelessWidget {
   const TopRating({Key? key}) : super(key: key);
@@ -23,11 +25,19 @@ class TopRating extends StatelessWidget {
             child: Row(
               children: [
                 for (int i = 0; i < fakeData.length; i++)
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: CircleAvatar(
-                      radius: 35,
-                      backgroundImage: AssetImage(fakeData[i].image),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(15),
+                    onTap: () {
+                      context.push(DeatilScreen(
+                        translatorModel: fakeData[i],
+                      ));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CircleAvatar(
+                        radius: 35,
+                        backgroundImage: AssetImage(fakeData[i].image),
+                      ),
                     ),
                   ),
               ],

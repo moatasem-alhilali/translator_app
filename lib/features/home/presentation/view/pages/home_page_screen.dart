@@ -40,14 +40,14 @@ class HomePageScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            const SizedBox(height: 5),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 8.0, horizontal: 15),
               child: Text(
                 text,
                 textAlign: TextAlign.center,
                 style: getTitleMediumTheme(context).copyWith(
-                  fontSize: 14,
+                  fontSize: 12,
                 ),
               ),
             ),
@@ -55,9 +55,9 @@ class HomePageScreen extends StatelessWidget {
             const TopRating(),
             const SizedBox(height: 10),
             const MostLanguege(),
+            const SizedBox(height: 10),
 
             //
-            Spacer(),
 
             OutlinedButton(
               onPressed: () {

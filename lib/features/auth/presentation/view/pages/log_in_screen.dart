@@ -7,6 +7,7 @@ import 'package:store_app/core/resources/size_config.dart';
 import 'package:store_app/core/themes/light_theme.dart';
 import 'package:store_app/core/utils/my_extensions.dart';
 import 'package:store_app/features/auth/presentation/view/pages/register_screen.dart';
+import 'package:store_app/features/home/presentation/view/pages/home_page_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -56,7 +57,7 @@ class LoginScreen extends StatelessWidget {
               text: "دخول",
               width: context.getWidth(90),
               onPressed: () {
-                context.push(const RegisterScreen());
+                context.push(HomePageScreen());
               },
             ),
           ],

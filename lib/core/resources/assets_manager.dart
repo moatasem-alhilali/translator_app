@@ -24,4 +24,5 @@ class FxImage {
   static const man1 = "assets/images/man-2.jpg";
   static const man2 = "assets/images/man-2.jpg";
   static const man3 = "assets/images/man-2.jpg";
+  static const chart = "assets/images/chart.jpg";
 }

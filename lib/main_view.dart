@@ -34,7 +34,7 @@ class MainView extends StatelessWidget {
       },
       supportedLocales: const [Locale('ar'), Locale('en')],
       debugShowCheckedModeBanner: false,
-      home:  HomePageScreen(),
+      home: OnBoardingScreen(),
     );
   }
 }

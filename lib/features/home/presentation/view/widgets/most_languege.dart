@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/core/resources/assets_manager.dart';
 import 'package:store_app/core/themes/light_theme.dart';
 
 class MostLanguege extends StatelessWidget {
@@ -6,16 +7,19 @@ class MostLanguege extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Align(
-          alignment: Alignment.topRight,
-          child: Text(
-            "اللغات الأكثر تداول",
-            style: getTitleMediumTheme(context),
+    return Expanded(
+      child: Column(
+        children: [
+          Align(
+            alignment: Alignment.topRight,
+            child: Text(
+              "اللغات الأكثر تداول",
+              style: getTitleMediumTheme(context),
+            ),
           ),
-        ),
-      ],
+          Expanded(child: Image.asset(FxImage.chart)),
+        ],
+      ),
     );
   }
 }
